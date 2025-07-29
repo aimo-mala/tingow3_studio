@@ -1,0 +1,874 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>tingoW3 - Web3 design studio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="goodui" />
+
+
+	<!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FreeHTML5.co
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+<!-- add google font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+
+
+	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+    <!-- Fontaewsome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+
+    <!--https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-telegram-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
+
+	<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+
+.cv-social-icons {
+  margin: 0;
+  padding: 0;
+}
+.cv-social-icons li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.cv-social-icons li a {
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  color: #2f2519;
+  padding-left: 0px;
+  padding-right: 10px;
+}
+.cv-social-icons li a i {
+  font-size: 20px;
+}
+
+
+/* divider style */
+.separator{
+  display:flex;
+  align-items: center;
+}
+.separator .line{
+  height: 1px;
+  flex: 2;
+  background-color: #e6eef0;
+}
+.separator p {
+  padding: 0 2rem;
+}
+
+
+
+/*text button style*/
+.read-more {
+margin-left: auto;
+padding-bottom: 5px;
+font-size: 12px;
+line-height: 18px;
+letter-spacing: 1px;
+text-transform: uppercase;
+border-bottom: 1px solid transparent;
+color:#f70;
+}
+
+
+/*=== underscore effect==*/
+@property --offset {
+  syntax: '<length>';
+  inherits: false;
+  initial-value: 0; /*control the digital effect*/
+}
+
+
+
+/*======bootstrp Bento grid style =======*/
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    padding: 15px;
+}
+
+.bento-item {
+	background-color: #f2f2f2;
+	background-repeat: no-repeat;
+	background-position: center; /*for image position*/
+    background-size: cover;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+
+.bento-item:hover {
+            transform: scale(1.05);
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0); /*change the shadow from0.1 to 0*/
+        }
+
+.bento-tall {
+            height: 600px;
+        }
+
+.bento-m-tall {
+            height: 300px;
+        }
+
+.bento-s-tall{
+        	 height:200px;
+        }
+
+
+.bento-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.0);
+    color: white;
+    }
+
+.bento-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+
+.bento-item h3 {
+    margin-bottom: 10px;
+}
+
+.bento-item p {
+    margin: 10px;
+}
+
+
+.bento-item-large {
+    grid-column: span 4;
+    grid-row: span 4;
+}
+
+
+.bento-item-1 {
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+
+
+.bento-item-4 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.bento-item-7 {
+    grid-column: span 1;
+
+}
+@media (max-width: 768px) {
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .bento-item-1,
+    .bento-item-4,
+    .bento-item-7 {
+        grid-column: span 2;
+    }
+}
+
+</style>
+
+<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-185237717-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-185237717-1');
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P44JZZF');</script>
+<!-- End Google Tag Manager -->
+
+</head>
+
+
+	
+	<body>
+<!--nav styel 1 -->
+	<div id="page">
+	<nav class="fh5co-nav" role="navigation">
+		<div class="container">
+
+			<!--kisscxlogo-->
+			<div class="fh5co-top-logo">
+				<div id="fh5co-logo"><span><a href="#"><img src="images/logo/logo.svg" style="width:100px;padding-top:0em;"></a></span></div>							
+			</div>
+
+
+		<!--navBar-->
+			<div class="fh5co-top-menu menu-1 text-center">
+
+				<ul style="list-style: none;padding-left:0px; padding-top:32px!important;">	
+					<li style="padding-bottom:0px;font-weight: 900;"><a href="#"><span class="w3-text-black" style="font-family:Goldman,sans-serif;font-size:14px;"></span></a></li>
+					<li style="padding-bottom:0px;font-weight: 900;"><a href="#works"><span class="w3-text-black" style="font-family:Goldman,sans-serif;font-size:14px;">Works</span></a></li>
+					<li style="padding-bottom:0px;font-weight: 900;"><a href="#what-i-do"><span class="w3-text-black" style="font-family:Goldman,sans-serif;font-size:14px;">Services</span></a></li>
+						<li style="padding-bottom:0px;font-weight: 900;font-size:14px;"><a href="#about"><span class="w3-text-black" style="font-family:Goldman,sans-serif;font-size:14px;">About</span></a></li>
+				 </ul>
+			</div>
+			
+			<div class="cv-social-icons fh5co-top-social menu-1 text-right">
+				<ul class="fh5co-social">
+            <li><a href="https://dribbble.com/bullfrogou"><i class="fa fa-dribbble" style="font-size: 33px; color:black"></i></a></li>
+               <li><a href="https://t.me/tingowiggle"><i class="fa fa-telegram" style="font-size: 30px; color:black;"></i></a></li>
+			      <!--<li><a href="https://www.instagram.com/aimomala/"><i class="icon-instagram" style="font-size: 30px;"></i></a></li>-->
+						<!--<li><a href="https://twitter.com/bullfrogou"><i class="icon-twitter" style="font-size: 30px;"></i></a></li>-->
+						<!--<li><a href=""><i class="icon-behance" style="font-size: 30px;"></i></a></li>-->
+				</ul>
+			</div>
+		
+		</div>
+	</nav>
+
+ 
+
+  <!-- fun for pixlated text-->
+<div class="svg-container">  
+    <svg viewbox="0 0 800 400" class="svg">
+    	   <defs>
+            <linearGradient id="grad1" x1="0%" y1="100%" x2="30%" y2="0%">
+                <stop offset="0%" stop-color="#C1FF14"/>
+                <stop offset="30%" stop-color="#C1FF14" stop-opacity="0" />
+            </linearGradient>
+        </defs>
+      <path id="curve" d="M 800 300 Q 400 350 0 300 L 0 0 L 800 0 L 800 300 Z" fill="url(#grad1)"/>
+      </path>
+    </svg>
+  </div>
+  <!--end-->
+
+
+<!--nav styel 2 - only logo
+	<nav role="navigation">
+		<div class="container">
+			<div class="">
+				<div id=""><a href="https://kisscx.com/"><img src="images/logo/logo.svg" style="width:45px;padding-top:1.8em;"></a></div>		
+			</div>
+</div>
+</nav>
+-->
+
+
+<!--end of nav styel2 -->
+	<div id="fh5co-work">	 
+		<div class="container">
+			<div class="row top-line animate-box">
+				<div class="col-md-7 col-md-push-4 text-left intro" id="work">
+
+					<p style="font-family:Goldman,sans-serif;font-size:20px;letter-spacing:2px;color: rgba(1,1,1,0.9);font-weight:80;"> <span style="font-weight:bold"></img>Y</span>uting <span style="font-weight:bold">O.</span></p> 
+
+
+
+<p style="font-family:Tisa Pro Thin Italic,sans-serif;font-size:80px;letter-spacing:2px;line-height:80px; color: rgba(1,1,1,0.9);font-weight:70;"><span class="amp"> web3.0</span> designer crafting <span style ="  color: inherit;
+  text-underline-offset: var(--offset, 0.2em);text-decoration: underline 0.15em; text-decoration-color:#c1ff14;transition: --offset 100ms, text-decoration-color 300ms;">brands</span> w<span class="amp">/</span><span style="font-family:Goldman, sans-serif;">visual design <span class="amp"> & </span> storytelling<span>
+
+    <span>
+    <p style="font-family:Tisa Pro,sans-serif; font-weight:100;"><a href="mailto:bullfrog.blogger@gmail.com" target="_top" class="btn btn-primary">Let's talk your next story!</a></p> </span>
+
+<!-- UI designer narative
+						<p style="font-family:Tisa Pro Thin Italic,sans-serif;font-size:30px;letter-spacing:3px;line-height:50px; color: rgba(1,1,1,0.9);font-weight:70;"><span>Visual product designer with the goal of </span>turning a business product into <span style="font-family:Tisa Pro Light Italic, sans-serif;font-size:47px;letter-spacing:2px;color: rgba(1,1,1,0.9);font-weight:70;">usable</span> <span class="amp"> & </span> <span style="font-family:Tisa Pro Light Italic, sans-serif;font-size:47px;letter-spacing:2px;color: rgba(1,1,1,0.9);font-weight:70;">desirable.<p></br>
+
+					-->
+
+<!-- hide nav style2 icons
+
+	                <ul class="cv-social-icons">
+						<li><a href="https://dribbble.com/bullfrogou"><i class="icon-dribbble" style="font-size: 30px;"></i></a></li>
+						<li><a href="https://www.instagram.com/aimomala/"><i class="icon-instagram" style="font-size: 30px;"></i></a></li>
+						<li><a href="https://twitter.com/bullfrogou"><i class="icon-twitter" style="font-size: 30px;"></i></a></li>
+						<li><a href="https://codepen.io/bullfrogou/"><i class="fab fa-codepen" style="font-size: 30px;"></i></a></li> <br>
+					</ul><br>
+-->
+
+<!-- hide nav style 2 navbar
+					<ul style="list-style: none;padding-left:0px;">
+					<li style="padding-bottom:7px;"><a href="defi.html"><span class="w3-text-black" style="font-family:ff-tisa-web-pro,sans-serif;">Case study &nbsp </span><i class="icon-arrow-right" style="font-weight:1000;"></i></a></li>
+					<li style="padding-bottom:7px;"><a href="#what-i-do"><span class="w3-text-black" style="font-family:ff-tisa-web-pro,sans-serif;">Area of expertise</span></a></li>
+					<li style="padding-bottom:7px;"><a href="https://kisscx.com"><span class="w3-text-black" style="font-family:ff-tisa-web-pro,sans-serif;">Blog </span></a></li>
+						<li style="padding-bottom:7px;"><a href="#about"><span class="w3-text-black" style="font-family:ff-tisa-web-pro,sans-serif;">About</span></a></li>
+				 </ul>
+-->
+       </div>
+     </div>
+
+   </div>
+
+
+<!--scroll more
+		<div class="container" style="padding-bottom:100px; padding-top: 100px;">
+			
+			<div class="col-md-1 col-md-push-5">
+				<span id="section10" class="demo"><a href="#works" style="text-align:center;width:100%;"><span></span>scroll for more</a></span></div>
+       </div></div> -->
+ 
+
+
+<!-- clients -->
+<div id="" class="container text-center" style ="padding:0em 0 0em 0em;clear: both;">
+
+<!--seprator-->
+<div class="separator col-md-8 col-md-offset-2 animate-box" style ="padding:5em 0;">
+  <div class="line"></div>
+  <p class="w3-text-dark-gray" style="font-family:Goldman,sans-serif; color: inherit;
+  text-underline-offset: var(--offset, 0.1em);text-decoration: underline 0.3em; text-decoration-color:#c1ff14;transition: --offset 400ms, text-decoration-color 400ms;">Trusted by</p>
+  <div class="line"></div>
+</div>
+
+
+      <div class="row animate-box">
+      	<div class="col-md-12 animate-box">
+      	<div class="col-md-2 animate-box"><img src="images/logo/wi.png" style="width:100%;"></div>
+      	<div class="col-md-2 animate-box"><img src="images/logo/ya.png" style="width:100%;"></div>
+      	<div class="col-md-2 animate-box"><img src="images/logo/block.png" style="width:100%"></div>
+      	<div class="col-md-2 animate-box"><img src="images/logo/ag.png" style="width:100%"></div> 
+      	<div class="col-md-2 animate-box"><img src="images/logo/adsk.png" style="width:100%"></div>
+      	<div class="col-md-2 animate-box"><img src="images/logo/ct.png" style="width:100%"></div> 
+      	<div class="col-md-2 animate-box"><img src="images/logo/mm.png" style="idth:100%;"></div>
+      	<div class="col-md-2 animate-box" style="padding-top:20px;"><img src="images/logo/mig.png" style="width:100%;"></div>
+</div>
+</div>
+</div>
+
+<!--seprator-->
+<div class="separator col-md-8 col-md-offset-2" style ="padding:2em 0;">
+  <div class="line"></div>
+  <p class="w3-text-dark-gray" style="font-family:Tisa Pro,sans-serif;"></p>
+  <div class="line"></div>
+</div>
+
+
+
+<!--end of clients-->
+	
+
+<!--================================================= Bento grid -STORY =====================================================-->
+
+
+
+
+<div  id="works" class="container">
+
+    <div class="bento-grid col-md-12">
+        <div class="bento-item bento-item-1" style="background-image:url(images/25_tingowiggle/immutable.gif);background-size:cover;"> 
+                 <h3></h3>
+               </div>
+
+                <div class="bento-item bento-item-2" style="background-image:url(images/25_tingowiggle/story_no_wi_fi.jpg);background-color:#c1ff14;"> 
+            <h3></h3>
+        </div>
+
+        <div class="bento-item bento-item-3 bento-s-tall" style="background-image:url(images/25_tingowiggle/story_jog_watch.jpg);background-color:#c1ff14;"> 
+            <h3></h3>
+        </div>
+                <div class="bento-item bento-item-5"style="background-image:url();background-color:#000;"> 
+            <h3 style="color:#fff; color:#fff;
+  text-underline-offset: var(--offset, 0.13em);text-decoration: underline 0.12em; text-decoration-color:#c1ff14;transition: --offset 300ms, text-decoration-color 300ms;">Blockchain story</h3>
+        </div>
+
+        <div class="bento-item bento-item-4" style="background-image:url(images/25_tingowiggle/story_bob_cafe.jpg);background-color:#c1ff14;"> 
+            <h3></h3>
+        </div>
+
+        <div class="bento-item bento-item-6" style="background-image:url(images/25_tingowiggle/story_eye_wink.gif);background-color:#c1ff14;"> 
+            <h3></h3>
+        </div>
+
+        <div class="bento-item bento-item-7" style="background-image:url(images/25_tingowiggle/story_usa_bob.jpg);background-color:#c1ff14;"> 
+            <h3></h3>
+        </div>
+        <div class="bento-item bento-item-1" style="background-image:url(images/25_tingowiggle/story_time_zone.png);background-color:#c1ff14;"> 
+            <h3></h3>
+        </div>
+        <div class="bento-item bento-s-tall" style="background-image:url(images/25_tingowiggle/story_mia_ph.jpg);background-color:#c1ff14;"> 
+            <h3></h3>
+        </div>
+                <div class="bento-item bento-s-tall" style="background-image:url(images/25_tingowiggle/story_portable.jpg);background-color:#c1ff14;"> 
+            <h3></h3>
+        </div>
+                        <div class="bento-item bento-s-tall" style="background-image:url(images/25_tingowiggle/story_universal.jpg);background-color:#c1ff14;"> 
+            <h3></h3>
+        </div>
+
+                            <div class="bento-item bento-s-tall" style="background-image:url(images/25_tingowiggle/story_cube_proximity.jpg);background-color:#c1ff14;"> 
+            <h3></h3>
+        </div>
+
+                            <div class="bento-item" style="background-image:url(images/25_tingowiggle/story_cube_proximity_immutable.jpg);background-color:#c1ff14;background-size:100% 100%;"> 
+            <h3></h3>
+        </div>
+
+   
+
+              <div class="bento-item bento-time-7 bento-s-tall" style="background-image:url(images/25_tingowiggle/story_pink_just_in_time.jpg);background-color:#c1ff14;"> 
+            <h3></h3>
+        
+        </div>
+            <div class="bento-item bento-time-7 bento-m-tall" style="background-image:url(images/25_tingowiggle/story_trust.jpg);background-color:#0A042E;background-size: 100% 70%;"> 
+            <h3></h3>
+        </div>
+             <div class="bento-item bento-time-4 bento-tall" style="background-image:url(images/25_tingowiggle/story_trans.gif);background-color:#0A042E;"> 
+            <h3></h3>
+        </div>
+
+
+    </div>
+</div>
+
+<!--featuere - Bento grid grid grid -->
+<!--end--> 
+
+
+<!--================================================= Bento grid - UI=====================================================-->
+
+<div class="container">
+
+  <!--  <h1 class="text-center mb-4" style="font-family:Goldman,sans-serif;font-weight:100;font-size:64px;letter-spacing:1px;color:#00000;padding-bottom:-100px">Mobile/Web Design</h1>-->
+
+    <div class="row">
+
+  
+
+
+    <div class="bento-grid col-md-12">
+
+            <div class="bento-item bento-item-large" style="background-image:url();background-color:#c1ff14;"> 
+            <h3 style="font-family:Goldman,sans-serif; font-size: 32px; color:#000;text-underline-offset: var(--offset, 0.13em);text-decoration: underline 0.05em; text-decoration-color:#000;transition: --offset 300ms, text-decoration-color 300ms;">Mobile/Web Design</h3>
+        </div>
+                <div class="bento-item bento-item-1 bento-m-tall" style="background-image:url(images/25_tingowiggle/ui_1.jpg);background-color:#c1ff14;"> 
+            <h3></h3>
+        </div>
+
+        <div class="bento-item bento-item-1 bento-m-tall" style="background-image:url(images/25_tingowiggle/04_brand.png);background-color:#c1ff14;"> 
+            <h3></h3>
+        </div>
+
+
+       <div class="bento-item bento-item-1 bento-tall" style="background-image:url(images/25_tingowiggle/ui_3.jpg);background-color:#c1ff14;background-repeat:no-repeat;
+  background-size:cover;"> 
+            <h3></h3>
+        </div>
+
+               <div class="bento-item bento-item-1 bento-tall" style="background-image:url(images/25_tingowiggle/01_cover.png);background-color:#c1ff14;background-repeat:no-repeat;
+  background-size:cover;"> 
+            <h3></h3>
+        </div>
+               <div class="bento-item bento-item-large bento-tall" style="background-image:url(images/25_tingowiggle/large_ui_1.jpg);background-color:#c1ff14;background-repeat:no-repeat;
+  background-size:cover;"> 
+            <h3></h3>
+        </div>
+
+    </div>
+</div>
+</div>
+
+
+<!-- what I do-->
+
+
+<div class="container">
+			<div class="row animate-box desc author-inner">
+
+				<div id="what-i-do" class="col-md-8 col-md-offset-0 text-center fh5co-heading">
+					<div><h2 style="font-family:Goldman,sans-serif;font-weight:100;font-size:47px;letter-spacing:1px;color:#00000;">I can help you with </h2></div>
+				</div>
+			</div>
+
+
+
+				<div class="col-md-6 text-center animate-box">
+					<a class="work">
+						<div class="work-grid" style="background-image:url(images/what_I_do_storyboard.jpg);"></div>
+						<h3 style="font-family:Tisa Pro,sans-serif; font-weight:100;">Explainer Videos & Storyboards</h3>
+						<p style="font-family:ff-tisa-web-pro,sans-serif; font-weight:100; font-size:16px; text-align:left; color:black;padding-left:10%"> I create visual stories that simplify complex ideas. From design briefs to big concepts, I turn them into clear, engaging visuals—making it easier to understand, relate, and explore.</p>
+					</a>
+				</div>
+
+
+                    <div class="col-md-6 text-center animate-box">
+                    <a class="work">
+                        <div class="work-grid" style="background-image:url(images/what_I_do_prototype.jpg);"></div>
+                        <h3 style="font-family:Tisa Pro,sans-serif; font-weight:100;">Motion & Prototypes</h3>
+                        <p style="font-family:ff-tisa-web-pro,sans-serif; font-weight:100; font-size:16px; text-align:left; color:black;padding-left:10%">I design interactive prototypes and animations that show how your product works—what it does, how it feels, and how users interact with it. From mobile to web to desktop, I bring ideas to life.</p>
+                    </a>
+                </div>
+				
+				
+	
+        <div class="row top-line"> </div>			
+
+
+
+        <div class="row animate-box">
+
+                <div class="col-md-6 text-center animate-box">
+                    <a class="work">
+                        <div class="work-grid" style="background-image:url(images/what_I_do_graphic.jpg);"></div>
+                        <h3 style="font-family:Tisa Pro,sans-serif; font-weight:100;"><span style="font-size:25px;">Branding, Colour & Typography</span></h3>
+                        <p style="font-family:ff-tisa-web-pro,sans-serif; font-weight:100; font-size:16px; text-align:left; color:black;padding-left:10%">I craft visual identities that speak clearly and consistently. From logo and color systems to typography, I help build a brand look and feel that connects and lasts.</p>
+                    </a>
+                </div>
+
+         <div class="col-md-6 text-center animate-box">
+                    <a class="work">
+                        <div class="work-grid" style="background-image:url(images/what_I_do_build.jpg);"></div>
+                        <h3 style="font-family:Tisa Pro,sans-serif; font-weight:100;">Design Systems & Style Guides</h3>
+                        <p style="font-family:ff-tisa-web-pro,sans-serif; font-weight:100; font-size:16px; text-align:left; color:black;padding-left:10%">I build scalable UI foundations—color, typography, grids, components—so teams can design consistently and efficiently. It ensures your brand stays cohesive.</p>
+                    </a>
+                </div>
+
+        <div class="row top-line"> </div>	
+
+
+<div class="col-md-6 text-center animate-box">
+                    <a class="work">
+                        <div class="work-grid" style="background-image:url(images/what_I_do_interaction.jpg);"></div>
+                        <h3 style="font-family:Tisa Pro,sans-serif; font-weight:100;">Collaborate & Interact</h3>
+                        <p style="font-family:ff-tisa-web-pro,sans-serif; font-weight:100; font-size:16px; text-align:left; color:black;padding-left:10%">I work closely with teams to shape user-focused experiences—from discovery to design delivery. Agile, adaptive, and always user-first.</p>
+                    </a>
+            </div>  
+
+
+				<div class="row top-line"> </div>	
+
+</div>
+</div>
+
+
+<!-- divider
+<div class="separator col-md-8 col-md-offset-2" style ="padding:10em 0;">
+  <div class="line"></div>
+  <p class="w3-text-dark-gray" style="font-family:Tisa Pro,sans-serif;">About</p>
+  <div class="line"></div>
+</div>
+end-->
+
+<!-- blog -->
+<div id="fh5co-author" class="fh5co-bg-start-section" style ="padding:2.5em; clear:both;background-image: url(images/legacy.png);background-size:100%;background-repeat:no-repeat;" >
+
+
+		<div id="design_lab" class="w3-content w3-display-container">
+		    
+		    <div class="row">
+		       <div class="col-md-6 text-center animate-box">
+
+		          <div class="" style="background-color:#fff border-radius:0px;">
+		             <img class="author-inner" src="images/blog/blog_feature_1.png" style="width:100%;">		               
+		             </div>
+					</div>
+					
+					<div class="desc animate-box w3-text-black col-md-offset-6" style="padding-left:5%; padding-right:0%;">
+							<span class="w3-text-dark-gray" style="font-family:Tisa Pro,sans-serif;font-weight:800;">LATEST POSTS</span>
+							<br><br>
+							<!--<h3 ><span style="font-family:Tisa Pro,sans-serif; font-weight:100;font-size:26px;">Kisscx Blog</span></h3>-->
+							<p style="font-family:ff-tisa-web-pro,sans-serif;font-size:14.5px;line-height: 25px;">For as long as I can remember I've been drawn to things that not only look beautiful but are also useful and desirable. And the mix of characteristics is overwhelmingly hard to come by - a website you use might do the job brilliantly but looks awful and isn't desired to use. Similarly an app might look fun with animation but it's distracting you from accomplishing a task.  I've built a design blog where you can find my dynamic design thinking. .</p>
+							<p><a href="https://kisscx.com" class="btn btn-primary btn-outline w3-black" style="background: #6fd3da;
+  color: #fff;
+  border: 1px;border-radius:5px;">Learn More</a></p>
+
+</div>
+				
+						</div>
+
+
+  </div>	
+
+</div>
+</div>
+
+<!--end-->
+
+<!--author-->
+
+	<div id="about" class="fh5co-bg-section">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<div ><h2><span class="talkbubble" style="color: white;"><br>Say Hello..</span></h2></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="author">
+						<div class="author-inner animate-box" style="background-image: url(images/person3.jpg);">
+						</div>
+						<div class="desc animate-box">
+							<span class="amp">Brand &amp; Interaction Designer</span>
+							<h3><span class="amp" style="font-size:25px">About tingoW3 design studio </span></h3>
+							<p style="font-family:Tisa Pro,sans-serif; font-weight:100;font-size:13px;line-height: 20px;">With a decade of experience in branding, mobile/web design, and visual storytelling, I work solo to bring ideas to life through illustration, motion graphics, and interactive prototypes. My strength lies in translating business goals into clear, compelling design—ready for production.If you're looking for a designer who can do both the thinking and the making—let’s connect.</p>
+
+							<!--<p><a href="about.html" class="btn btn-primary btn-outline">Learn More</a></p>-->
+							<!--<ul class="fh5co-social-icons">
+						<li><a href="https://twitter.com/bullfrogou"><i class="icon-twitter"></i></a></li>
+						<li><a href="https://dribbble.com/bullfrogou"><i class="icon-dribbble"></i></a></li>
+						<!-<li><a href="https://www.facebook.com/justfunnytshirt/"><i class="icon-facebook"></i></a></li>-->
+						<!--<li><a href="https://www.instagram.com/aimomala/"><i class="icon-instagram"></i></a></li>-->
+						<!--<li><a href="https://codepen.io/bullfrogou/"><i class="fab fa-codepen"></i></a></li>-->
+					</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-started">
+		<div class="container" id="contactme">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2 style="font-family:Tisa Pro,sans-serif; font-weight:100;">Get in touch</h2>
+					<p style="font-family:Tisa Pro,sans-serif; font-weight:100;">If you're looking for a designer who can do both the thinking and the making—let’s connect.</p>
+					<p style="font-family:Tisa Pro,sans-serif; font-weight:100;"><a href="mailto:bullfrog.blogger@gmail.com" target="_top" class="btn btn-primary">Let's talk!</a></p>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<footer id="fh5co-footer" role="contentinfo">
+		<div class="container">
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block">&copy; 2016-2025 tingoW3 design stuido. All Rights Reserved.</small> 
+						<!--<small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a> &amp; <a href="http://blog.gessato.com/" target="_blank">Gessato</a></small>-->
+					</p>
+			
+						<ul class="fh5co-social-icons">
+						 <li><a href="https://dribbble.com/bullfrogou"><i class="fa fa-dribbble" style="font-size: 30px; color:black"></i></a></li>
+                         <li><a href="https://t.me/tingowiggle"><i class="fa fa-telegram" style="font-size: 28px; color:black;"></i></a></li>
+						<!--<li><a href=""><i class="icon-behance"></i></a></li>-->
+						<!--<li><a href="https://www.instagram.com/aimomala/"><i class="icon-instagram"></i></a></li>-->
+						<!--<li><a href="https://www.facebook.com/justfunnytshirt/"><i class="icon-facebook"></i></a></li>-->
+						<!--<li><a href="https://codepen.io/bullfrogou/"><i class="fab fa-codepen"></i></a></li>-->
+					 </ul>
+					
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+
+
+
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000);    
+}
+</script>
+
+
+<script type="text/javascript">
+	
+$(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
+
+</script>
+
+<script type="text/javascript">(function() {
+  // Variables
+  var $curve = document.getElementById("curve");
+  var last_known_scroll_position = 0;
+  var defaultCurveValue = 350;
+  var curveRate = 3;
+  var ticking = false;
+  var curveValue;
+
+  // Handle the functionality
+  function scrollEvent(scrollPos) {
+    if (scrollPos >= 0 && scrollPos < defaultCurveValue) {
+      curveValue = defaultCurveValue - parseFloat(scrollPos / curveRate);
+      $curve.setAttribute(
+        "d",
+        "M 800 300 Q 400 " + curveValue + " 0 300 L 0 0 L 800 0 L 800 300 Z"
+      );
+    }
+  }
+
+  // Scroll Listener
+  // https://developer.mozilla.org/en-US/docs/Web/Events/scroll
+  window.addEventListener("scroll", function(e) {
+    last_known_scroll_position = window.scrollY;
+
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        scrollEvent(last_known_scroll_position);
+        ticking = false;
+      });
+    }
+
+    ticking = true;
+  });
+})();
+</script>
+
+<!--fun-->
+<script type="text/javascript">
+	(function() {
+  // Variables
+  var $curve = document.getElementById("curve");
+  var last_known_scroll_position = 0;
+  var defaultCurveValue = 350;
+  var curveRate = 2;
+  var ticking = false;
+  var curveValue;
+
+  // Handle the functionality
+  function scrollEvent(scrollPos) {
+    if (scrollPos >= 0 && scrollPos < defaultCurveValue) {
+      curveValue = defaultCurveValue - parseFloat(scrollPos / curveRate);
+      $curve.setAttribute(
+        "d",
+        "M 800 300 Q 400 " + curveValue + " 0 300 L 0 0 L 800 0 L 800 300 Z"
+      );
+    }
+  }
+
+  // Scroll Listener
+  // https://developer.mozilla.org/en-US/docs/Web/Events/scroll
+  window.addEventListener("scroll", function(e) {
+    last_known_scroll_position = window.scrollY;
+
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        scrollEvent(last_known_scroll_position);
+        ticking = false;
+      });
+    }
+
+    ticking = true;
+  });
+})();
+
+
+
+</script>
+
+
+
+<!--end-->
+
+
+
+
+	</body>
+</html>
+
