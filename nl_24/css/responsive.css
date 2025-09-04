@@ -138,7 +138,7 @@
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 1170px;
+        max-width: 1400px; /*to be in sync iwth index*/
     }
 
 }
